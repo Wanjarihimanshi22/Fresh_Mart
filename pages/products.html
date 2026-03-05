@@ -1,31 +1,125 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Storyline</title>
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <h1 class="logo">Fresh Mart</h1>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="#footer">About</a>
-                <a href="./pages/contact.html">Contact</a>
-                <a href="#product">Products</a>
-                <a href="#login">Login</a>
-            </nav>
-        </header>
-        <main class="hero">
-            <img src="./assets/grocery baner.jpeg" alt="heroimage" class="heroimage">
-        </main>
-        <footer class="footercontainer" id="footer">
-            <div class="paracontainer">
-                <p class="footerpara">Readline created by www.freshmart.com</p>
-                <P class="footerpara">Contact with ME->9423564281</P>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Fresh Mart</title>
+    <link rel="stylesheet" href="./../style/products.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Fresh Mart</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="./pages/contact.html">Contact</a>
+        <a href="#product">Products</a>
+        <a href="#login">Login</a>
+      </nav>
+    </header>
+    <main class="hero">
+      <img src="./assets/grocery baner.jpeg" alt="heroimage" class="heroimage">
+    </main>
+    <div class="Container" id="products"></div>
+        <section>
+            <h2 id="vegetable"> organic vegetable</h2>
+            <div class="cardMainContainer">
+                <div class="cardContainer">
+                    <img src="./../assets/grocery image 2.png" alt="grocery">
+                    <p class="heading">Carrot</p>
+                    <p class="price"><b>RS.50</b>per kg</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+                    <div class="cardContainer">
+                    <img src="./../assets/grocery image 5.jpg" alt="grocery">
+                    <p class="heading">Tomato</p>
+                    <p class="price"><b>RS.70</b>per kg</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <img src="./../assets/fruit 4.jpg" alt="grocery">
+                    <p class="heading">Onion</p>
+                    <p class="price"><b>RS.550</b>per kg</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+        </section>
+        <section>
+            <h2 id="vegetable"> organic fruit</h2>
+            <div class="cardMainContainer">
+                <div class="cardContainer">
+                    <img src="./../fruit 1.jpg" alt="grocery">
+                    <p class="heading">Orange</p>
+                    <p class="price"><b>RS.100</b>per dz</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+                    <div class="cardContainer">
+                    <img src="./../assets/fruit 2.png" alt="grocery">
+                    <p class="heading">Graph</p>
+                    <p class="price"><b>RS.70</b>per dz</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <img src="./../assets/fruit 5.webp" alt="grocery">
+                    <p class="heading">Beet</p>
+                    <p class="price"><b>RS.30</b>per kg</p>
+                    <div class="btncontainer">
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="paraContainer">
+            <div class="col-foot">
+            <h2>About Us</h2>
+                <p>If you are  going to use Fresh Mart products Lorem ipsum dolor sit amet consectetur, adipisicing <br>
+                    elit. Autem, nesciunt libero minima tenetur eius id, explicabo incidunt earum <br>
+                    pariatur ipsam odio accusantium mollitia quisquam reiciendis ducimus qui</p>
+            </div>
+            <div class="col-foot">
+            <h2>Opening Timing</h2>
+                <table>
+                    <tr>
+                        <td>Mon-Fri......</td>
+                        <td>10.00 AM - 8.00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday.....</td>
+                        <td>8.00 AM - 2 P.00PM</td>
+                    </tr>
+                </table>
+            </div>
+            <div  class="col-foot">
+                <h2> Contact Us</h2>
+                <ul class="contactus">
+                <li>+ 2316743391</li>
+                <li>www.freshmart.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+  </body>
 </html>
