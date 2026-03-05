@@ -11,17 +11,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color:#008000;
-    color: white;
+    background-color:#6fea73;
+    color:white;
     position: fixed;
     z-index: 2;
 
 }
+
 .logo{
     width: 100%;
     padding-left: 20px;
 
 }
+.logo:hover{
+  color: black;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -30,9 +35,13 @@
 }
 .navbar a{
     color: white;;
-    font-family: bold;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    transition: color 0.3 ease-in-out;
+}
+.navbar a:hover{
+    color: black;
 }
 .hero{
     display: flex;
@@ -40,23 +49,39 @@
 }
 .heroimage{
     width:100%;
-    height: 95hv;
+    height: 100hv;
 }
-.footercontainer{
-    width: 100%;
-    height: 30vh;
-    padding: 20px;
-    background-color:#008000;
-    margin-top: 50px;
+/* Footer Style */
+
+footer{
+  padding: 20px;
+  background-color: #6fea73;
+}
+.Container{
+  background-color: #6fea73;
 }
 
-.paracontainer{
-    margin-top: 50px;
+.paraContainer {
+  padding:20px 0px 20px 20px;
+  display: grid;
+  gap:50px;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 }
-.footerpara{
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
+.paraContainer p{
+  padding-right:60px;
+  line-height: 28px;
+}
+.paraContainer table td{
+  padding:10px 0px;
+
+}
+.col-foot h2{
+  font-size:18px;
+  margin-bottom:25px;
+}
+.col-foot li{
+  margin-bottom:15px;
+  list-style-type: disclosure-closed;
 }
 
 
