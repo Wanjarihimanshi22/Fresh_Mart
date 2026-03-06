@@ -43,14 +43,30 @@
 .navbar a:hover{
     color: black;
 }
+@media  screen and (max-width:768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar a{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
 .Container{
   display:grid ;
   gap:1rem;
   min-height: 2vh;
 }
 h2{
-  margin:12px;
-  padding-top: 10px;
+  margin:25px;
+  padding-top: 50px;
   text-align: center;
  }
 
@@ -123,7 +139,7 @@ h2{
 }
 
 .btn:hover {
-  background-color:#badfa8
+  background-color:#badfa8;
   color:black;
   transition: all 0.2s ease-in;
 }
@@ -146,15 +162,16 @@ h2{
     flex-direction: row;
   }
 }*/
-@media (max-width:768px){
-  .cardContainer{
-    width: 100%;
-  }
+@media  screen and (max-width:768px){
+  .Container{
+    padding:10px 0;
+  }  
 }
 /* Footer Style */
 
 footer{
   padding: 20px;
+  margin-top: 20px;
   background-color: #6fea73;
 }
 .Container{
@@ -183,4 +200,10 @@ footer{
 .col-foot li{
   margin-bottom:15px;
   list-style-type: disclosure-closed;
+}
+@media screen and (max-width:768px){
+  fotter{
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
