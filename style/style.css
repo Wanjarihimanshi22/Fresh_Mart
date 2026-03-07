@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding: 0;
@@ -11,8 +10,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color:#4dc344;
-    color: white;
+    background-color:#ffb95e;
+    color:#2f4839;
+    background-color:#ffb95e;
+    color:#2f4839;
     position: fixed;
     z-index: 2;
 
@@ -29,32 +30,170 @@
     padding-right: 20px;
 }
 .navbar a{
-    color: white;;
-    font-family: bold;
+    color: #576238;
+    font-weight: bold;
     text-decoration: none;
     font-size: 25px;
 }
-.hero{
+.navbar a:hover{
+    color: black;
+}
+@media screen and (max-width:768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar a{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
 .heroimage{
+  width:100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3 ease;
+}
+@media(max-width:768px){
+  .heroimage{
+    background-size: cover;
+  }
+}
+
+.Container{
+  display:grid ;
+  gap:1rem;
+  min-height: 2vh;
+}
+h2{
+  margin:12px;
+  padding-top: 10px;
+  text-align: center;
+ }
+
+.cardMainContainer{
+  display: flex;
+  flex-wrap: wrap;
+    gap:20px;
+  justify-content: center;
+ 
+}
+
+.cardContainer {
+  position: relative;
+  width:300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow o.3 rgba(0,0,0,0.1);
+  border:2px solid rgb(22, 91, 17);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  gap:20px;
+  
+}
+.cardContainer:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cardContainer img{
+  max-width: 100%;
+  height:300px;
+  object-fit: fill;
+  overflow: hidden;
+  transition: transform 0.3 ease-in-out;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.heading {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: rgb(12, 12, 12);
+}
+
+.price {
+  font-size: 1rem;
+  color: rgb(196, 9, 9);
+  font-size: bold;
+  margin-bottom: 5px;
+}
+
+
+.btnContainer {
+  margin-top: 10px;
+  gap:10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color:#badfa8;
+  border: 2px solid rgb(22, 91, 17);
+  outline: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  width: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:#badfa8;
+  color:black;
+  transition: all 0.2s ease-in;
+}
+/*@media screen and (max-width:600px){
+  .Container{
     width:100%;
     height: 95hv;
 }
 .footercontainer{
     width: 100%;
-    height: 30vh;
-    padding: 20px;
-    background-color:#4dc344;
-    margin-top: 50px;
+  }
+}
+/* Footer Style */
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  background-color:#fad564;
+}
+.Container{
+  background-color: #fad564;
 }
 
-.paracontainer{
-    margin-top: 50px;
+.paraContainer {
+  padding:20px  20px 20px;
+  display: grid;
+  gap:50px;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 }
-.footerpara{
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
+.paraContainer p{
+  padding-right:50px;
+  line-height: 28px;
 }
+.paraContainer table td{
+  padding:5px 0px;
+
+}
+.col-foot h2{
+  font-size:16px;
+  margin-bottom:10px;
+}
+.col-foot li{
+  margin-bottom:5px;
+  list-style-type: disclosure-closed;
+}
+@media screen and (max-width:768px){
+  fotter{
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+
